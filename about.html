@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | ScatterArrow</title>
+    <meta name="description" content="About Nico Heidtke">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="About | ScatterArrow">
+    <meta property="og:description" content="Thoughts on software development, technology, and more">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicoheidtke.github.io/about.html">
+    <meta property="og:image" content="https://nicoheidtke.github.io/static/images/site-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nicoheidtke">
+    <meta name="twitter:creator" content="@nicoheidtke">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nicoheidtke.github.io/about.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ScatterArrow",
+        "url": "https://nicoheidtke.github.io/",
+        "description": "Thoughts on software development, technology, and more",
+        "author": {
+            "@type": "Person",
+            "name": "Nico Heidtke"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Nico Heidtke"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nicoheidtke.github.io/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    
+    <!-- Initial theme setting based on user preference -->
+    <script>
+        // Pass base_url to JavaScript
+        window.baseUrl = "/";
+        // Check for saved theme preference or respect OS preference
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const storedTheme = localStorage.getItem("theme");
+        
+        if (storedTheme === "dark" || (!storedTheme && prefersDarkScheme.matches)) {
+            document.documentElement.classList.add("dark-mode");
+        } else {
+            document.documentElement.classList.add("light-mode");
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- Add theme toggle as a fixed position element at the top right -->
+    <button id="theme-toggle" title="Toggle dark/light mode">
+        <span class="toggle-text">Theme</span>
+    </button>
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="site-title">ScatterArrow</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="">Home</a></li>
+                        <li><a href="/blog/index.html" class="">Blog</a></li>
+                        <li><a href="/about.html" class="active">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+<article class="about-page">
+    <div class="about-content">
+        <div class="about-body">
+            <blockquote>
+<p>This site was built using <a href="https://github.com/nicoheidtke/straightshot">straightshot</a>.</p>
+</blockquote>
+<h1>About Me</h1>
+<p>Welcome! I'm Nico Heidtke, the author of this site. I'm a passionate software engineer with a with experience in lots of stuff like C++, Python, C#, software architecture, and team leadership.<br />
+I write here to help others and myself learning about stuff and to give back to the community which helped me to become the sofware engineer who I am today.</p>
+<h2>Connect With Me</h2>
+<ul>
+<li>LinkedIn: <a href="https://linkedin.com/in/nico-heidtke">Link</a></li>
+<li>GitHub: <a href="https://github.com/nicoheidtke">Link</a></li>
+</ul>
+
+        </div>
+    </div>
+</article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2025 Nico Heidtke
+                </div>
+                <div class="footer-links">
+                    <a href="/feed.xml" title="RSS Feed">RSS</a>
+                    <a href="/sitemap.xml" title="Sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/main.js" defer></script>
+    
+</body>
+</html>

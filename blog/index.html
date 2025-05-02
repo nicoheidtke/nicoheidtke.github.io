@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - ScatterArrow</title>
+    <meta name="description" content="Read articles about software development, technology, and more on ScatterArrow">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="Blog | ScatterArrow">
+    <meta property="og:description" content="Read articles about software development, technology, and more on ScatterArrow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicoheidtke.github.io/blog/index.html">
+    <meta property="og:image" content="https://nicoheidtke.github.io/static/images/site-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nicoheidtke">
+    <meta name="twitter:creator" content="@nicoheidtke">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nicoheidtke.github.io/blog/index.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "ScatterArrow Blog",
+  "description": "Read articles about software development, technology, and more on ScatterArrow",
+  "url": "https://nicoheidtke.github.io/blog/index.html",
+  "publisher": {
+    "@type": "Person",
+    "name": "Nico Heidtke"
+  },
+  "blogPost": [
+  ]
+}
+    </script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    
+    <!-- Initial theme setting based on user preference -->
+    <script>
+        // Pass base_url to JavaScript
+        window.baseUrl = "/";
+        // Check for saved theme preference or respect OS preference
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const storedTheme = localStorage.getItem("theme");
+        
+        if (storedTheme === "dark" || (!storedTheme && prefersDarkScheme.matches)) {
+            document.documentElement.classList.add("dark-mode");
+        } else {
+            document.documentElement.classList.add("light-mode");
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- Add theme toggle as a fixed position element at the top right -->
+    <button id="theme-toggle" title="Toggle dark/light mode">
+        <span class="toggle-text">Theme</span>
+    </button>
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="site-title">ScatterArrow</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="">Home</a></li>
+                        <li><a href="/blog/index.html" class="">Blog</a></li>
+                        <li><a href="/about.html" class="">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+<main class="container">
+    <h1>Blog</h1>
+    
+    <div class="topic-filtering">
+        <div class="topic-filter-controls">
+            <button id="show-topic-filters" class="button">Filter by Topic</button>
+            <button id="clear-topic-selection" class="topic-filter-clear" style="display: none;">Clear Filters</button>
+        </div>
+    </div>
+    
+    <div id="topic-filters" class="active-topic-list" style="display: none;">
+    </div>
+    
+    <div id="post-grid" class="post-grid"><!-- Article cards will be rendered by JS --></div>
+    <noscript>
+      <div class="post-list-fallback">
+        <ul>
+        </ul>
+      </div>
+    </noscript>
+    <div id="loading-indicator" class="loading-indicator" style="display: none;">Loading more articles...</div>
+    <div id="no-results" class="no-results" style="display: none;">
+        <p>No articles match the selected topics.</p>
+        <button id="reset-filters" class="button">Reset Filters</button>
+    </div>
+</main>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2025 Nico Heidtke
+                </div>
+                <div class="footer-links">
+                    <a href="/feed.xml" title="RSS Feed">RSS</a>
+                    <a href="/sitemap.xml" title="Sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/main.js" defer></script>
+    
+</body>
+</html>

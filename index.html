@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScatterArrow</title>
+    <meta name="description" content="Thoughts on software development, technology, and more">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="ScatterArrow">
+    <meta property="og:description" content="Thoughts on software development, technology, and more">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicoheidtke.github.io/index.html">
+    <meta property="og:image" content="https://nicoheidtke.github.io/static/images/site-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nicoheidtke">
+    <meta name="twitter:creator" content="@nicoheidtke">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nicoheidtke.github.io/index.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ScatterArrow",
+  "description": "Thoughts on software development, technology, and more",
+  "url": "https://nicoheidtke.github.io/",
+  "author": {
+    "@type": "Person",
+    "name": "Nico Heidtke"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Nico Heidtke"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+    ]
+  },
+  "keywords": "software development, programming, technology, architecture, design patterns, ai, llm"
+}
+    </script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    
+    <!-- Initial theme setting based on user preference -->
+    <script>
+        // Pass base_url to JavaScript
+        window.baseUrl = "/";
+        // Check for saved theme preference or respect OS preference
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const storedTheme = localStorage.getItem("theme");
+        
+        if (storedTheme === "dark" || (!storedTheme && prefersDarkScheme.matches)) {
+            document.documentElement.classList.add("dark-mode");
+        } else {
+            document.documentElement.classList.add("light-mode");
+        }
+    </script>
+    
+</head>
+<body>
+    <!-- Add theme toggle as a fixed position element at the top right -->
+    <button id="theme-toggle" title="Toggle dark/light mode">
+        <span class="toggle-text">Theme</span>
+    </button>
+    
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="site-title">ScatterArrow</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/blog/index.html" class="">Blog</a></li>
+                        <li><a href="/about.html" class="">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-tagline">Thoughts on software development, technology, and more</p>
+        <div class="hero-cta">
+            <a href="/blog/index.html" class="button primary">Explore Articles</a>
+            <a href="/about.html" class="button secondary">About Me</a>
+        </div>
+    </div>
+</section>
+
+<section class="featured-posts">
+    <h2>Featured Articles</h2>
+    <div class="post-grid" id="post-grid"><!-- Article cards will be rendered by JS --></div>
+    <div class="view-all">
+        <a href="/blog/index.html" class="button">View all articles</a>
+    </div>
+</section>
+
+<section class="topics-section">
+    <h2>Browse by Topic</h2>
+    <div class="topic-cloud">
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2025 Nico Heidtke
+                </div>
+                <div class="footer-links">
+                    <a href="/feed.xml" title="RSS Feed">RSS</a>
+                    <a href="/sitemap.xml" title="Sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/main.js" defer></script>
+    
+
+</body>
+</html>
